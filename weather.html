@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="enter your location">
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+           
+        </div>
+        <div id="weather">
+            <img src="" alt="no img" class="weather-icon">
+             <h1><span id="temp">22</span></h1>
+             <h2 id="city">Neath Port Talbot</h2>
+             <p id="description">slight rain</p>
+             <div id="date">5 april 2024</div>
+             <div id="weather-details">
+                <div class="col">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <p id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div class="text">
+                            <p id="pressure">44Hpa</p>
+                             <p>Pressure</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <p id="wind">1</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+   
+</body>
+<script src="weather.js"></script>
+</html>
